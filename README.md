@@ -5,8 +5,7 @@
 NSoup是一个开源框架，是JSoup的.NET移植版本，使用方法基本一致！
 #### 使用：
 ```c#
-                   String url_template = "http://dict.youdao.com/w/eng/{0}";
-                    String url = String.Format(url_template, GetCombineString(word));
+                    String url = "http://www.baidu.com";
                     //解析html
                     Document doc = NSoup.NSoupClient.Parse(url, 3000);
                     Elements WordBig = doc.Select("#phrsListTab > h2 > span");
