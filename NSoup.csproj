@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Parse\TreeBuilderState.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Nodes\entities-base.txt" />
+    <None Remove="Nodes\entities-full.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Nodes\entities-base.txt" />
+    <EmbeddedResource Include="Nodes\entities-full.txt" />
+  </ItemGroup>
+
+</Project>
