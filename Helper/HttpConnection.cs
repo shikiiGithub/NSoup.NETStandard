@@ -243,9 +243,17 @@ namespace NSoup.Helper
 
 		public Document Get()
 		{
-			req.Method(NSoup.Method.Get);
-			Execute();
-			return res.Parse();
+            try
+            {
+                req.Method(NSoup.Method.Get);
+                Execute();
+                return res.Parse();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+			
 		}
 
 		public Document Post()
